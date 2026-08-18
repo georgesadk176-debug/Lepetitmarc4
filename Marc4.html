@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le petit Marc 4</title>
+<!-- تضمين مكتبة الأيقونات -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* إعدادات الألوان الأساسية */
+:root {
+--primary-color: #2b5876;
+--secondary-color: #4e4376;
+--accent-color: #ff9a9e;
+--bg-color: #f4f7f6;
+--text-color: #333;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: var(--bg-color);
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+color: var(--text-color);
+}
+
+/* تصميم الحاوية الرئيسية (الكارت) */
+.card-container {
+background: #ffffff;
+border-radius: 20px;
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+width: 90%;
+max-width: 900px;
+display: flex;
+flex-direction: row;
+}
+
+/* قسم صورة الغلاف */
+.cover-section {
+flex: 1;
+background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+}
+
+.cover-image {
+max-width: 100%;
+border-radius: 12px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease;
+}
+
+.cover-image:hover {
+transform: scale(1.03);
+}
+
+/* قسم المحتوى والأزرار */
+.content-section {
+flex: 1;
+padding: 50px 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+h1 {
+color: var(--primary-color);
+font-size: 2.8em;
+margin-bottom: 10px;
+font-weight: 800;
+letter-spacing: 1px;
+}
+
+p.subtitle {
+color: #7f8c8d;
+margin-bottom: 40px;
+font-size: 1.1em;
+}
+
+/* شبكة الأزرار */
+.buttons-grid {
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 100%;
+max-width: 300px;
+}
+
+/* تصميم الأزرار كروابط */
+.action-btn {
+background: #ffffff;
+color: var(--primary-color);
+border: 2px solid var(--primary-color);
+padding: 15px 20px;
+border-radius: 12px;
+font-size: 1.2em;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
+text-decoration: none;
+}
+
+.action-btn:hover {
+background: var(--primary-color);
+color: #ffffff;
+transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(43, 88, 118, 0.3);
+}
+
+.action-btn i {
+font-size: 1.4em;
+}
+
+/* جعل التصميم متجاوباً مع الهواتف */
+@media (max-width: 768px) {
+.card-container {
+flex-direction: column;
+margin: 20px 0;
+}
+.content-section {
+padding: 40px 20px;
+}
+h1 {
+font-size: 2.2em;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="card-container">
+<!-- قسم الغلاف -->
+<div class="cover-section">
+<img src="1000017596.jpg" alt="غلاف Le petit Marc 4" class="cover-image">
+</div>
+
+<!-- قسم المحتوى -->
+<div class="content-section">
+<h1>Le petit Marc 4</h1>
+<p class="subtitle">المنصة التفاعلية الخاصة بالكتاب</p>
+
+<div class="buttons-grid">
+<!-- زر فتح الكتاب (تأكد من تسمية ملف الـ PDF بهذا الاسم) -->
+<a href="book.pdf" target="_blank" class="action-btn">
+<i class="fas fa-book-reader"></i>
+<span>تصفح الكتاب</span>
+</a>
+
+<!-- زر الأسئلة المتعددة (يجب أن يكون لديك صفحة بهذا الاسم) -->
+<a href="questions.html" class="action-btn">
+<i class="fas fa-list-ul"></i>
+<span>أسئلة متعددة</span>
+</a>
+
+<!-- زر الألعاب (يجب أن يكون لديك صفحة بهذا الاسم) -->
+<a href="games.html" class="action-btn">
+<i class="fas fa-gamepad"></i>
+<span>ألعاب تفاعلية</span>
+</a>
+</div>
+</div>
+</div>
+
+</body>
+</html>
